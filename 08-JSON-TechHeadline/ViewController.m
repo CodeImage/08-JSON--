@@ -35,14 +35,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+    self.refreshControl.tintColor = [UIColor blueColor];
+    
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"正在努力加载中..." attributes:@{NSForegroundColorAttributeName:[UIColor greenColor]}];
+    
+    [self getnewsList];
+    
+}
+
+// 下拉刷新监听方法（先在sb的控制器开启refreshing）
+- (IBAction)didRefresh:(UIRefreshControl *)sender {
+    
+    [self getnewsList];
+}
+
+- (void)getnewsList{
     [LJNewsModel getNewsListFromURLWithSuccessBlock:^(NSArray *arr) {
         self.newsList = arr;
         
+        // 第一次viewDidLoad并没开启refreshControl，停止没关系。
+        [self.refreshControl endRefreshing];
     } andErrorBlock:^{
         NSLog(@"can't get news list");
     }];
-    
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
