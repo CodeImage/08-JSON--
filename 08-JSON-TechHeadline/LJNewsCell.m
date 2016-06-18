@@ -7,6 +7,8 @@
 //
 
 #import "LJNewsCell.h"
+#import "UIImageView+WebCache.h"
+
 @interface LJNewsCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *summaryLabel;
@@ -26,7 +28,12 @@
     self.titleLabel.text = newsModel.title;
     self.summaryLabel.text = newsModel.summary;
     self.sitenameLabel.text = newsModel.sitename;
-    self.iconImageView.image = [UIImage imageNamed:newsModel.img];
+    
+    NSURL *url = [NSURL URLWithString:newsModel.img];
+    [self.iconImageView sd_setImageWithURL:url completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+    }];
+    
     self.addTimeLabel.text = [NSString stringWithFormat:@"%d",newsModel.addtime.intValue];
 }
 

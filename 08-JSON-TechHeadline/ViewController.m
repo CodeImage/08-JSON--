@@ -11,23 +11,32 @@
 #import "LJNewsModel.h"
 
 @interface ViewController ()
-@property (nonatomic,strong) NSMutableArray<LJNewsModel *> *newsList;
+@property (nonatomic,strong) NSArray<LJNewsModel *> *newsList;
 @end
 
+
 @implementation ViewController
-- (NSMutableArray *)newsList{
+
+// 重写setter、getter，不生成带下划线的变量（老师没有懒加载，所以不存在这个问题）
+@synthesize newsList = _newsList;
+
+- (NSArray *)newsList{
     if (!_newsList) {
-        _newsList = [NSMutableArray array];
+        _newsList = [NSArray array];
     }
     return _newsList;
+}
+
+- (void)setNewsList:(NSArray<LJNewsModel *> *)newsList{
+    _newsList = newsList;
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [LJNewsModel getNewsListFromURLWithSuccessBlock:^(LJNewsModel *model) {
-        [self.newsList addObject:model];
-        [self.tableView reloadData];
+    [LJNewsModel getNewsListFromURLWithSuccessBlock:^(NSArray *arr) {
+        self.newsList = arr;
         
     } andErrorBlock:^{
         NSLog(@"can't get news list");

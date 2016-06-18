@@ -17,5 +17,5 @@
 + (instancetype)newsModelWithDict:(NSDictionary *)dict;
 
 // 由于解析JSON可能耗时，是子线程，不能用返回值传数组，因为可能会卡很长时间，所以只能用block在解析完回调传数组
-+ (void)getNewsListFromURLWithSuccessBlock:(void(^)(LJNewsModel *model))successBlock andErrorBlock:(void(^)())errorBlock;
++ (void)getNewsListFromURLWithSuccessBlock:(void(^)(NSArray *model))successBlock andErrorBlock:(void(^)())errorBlock;
 @end
