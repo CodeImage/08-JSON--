@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ADEA98B21D156555003A2B08"
-               BuildableName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.app"
-               BlueprintName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;"
-               ReferencedContainer = "container:08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.xcodeproj">
+               BuildableName = "08-JSON-TechHeadline.app"
+               BlueprintName = "08-JSON-TechHeadline"
+               ReferencedContainer = "container:08-JSON-TechHeadline.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEA98B21D156555003A2B08"
-            BuildableName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.app"
-            BlueprintName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;"
-            ReferencedContainer = "container:08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.xcodeproj">
+            BuildableName = "08-JSON-TechHeadline.app"
+            BlueprintName = "08-JSON-TechHeadline"
+            ReferencedContainer = "container:08-JSON-TechHeadline.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEA98B21D156555003A2B08"
-            BuildableName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.app"
-            BlueprintName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;"
-            ReferencedContainer = "container:08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.xcodeproj">
+            BuildableName = "08-JSON-TechHeadline.app"
+            BlueprintName = "08-JSON-TechHeadline"
+            ReferencedContainer = "container:08-JSON-TechHeadline.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADEA98B21D156555003A2B08"
-            BuildableName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.app"
-            BlueprintName = "08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;"
-            ReferencedContainer = "container:08-JSON-&#x79d1;&#x6280;&#x5934;&#x6761;.xcodeproj">
+            BuildableName = "08-JSON-TechHeadline.app"
+            BlueprintName = "08-JSON-TechHeadline"
+            ReferencedContainer = "container:08-JSON-TechHeadline.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

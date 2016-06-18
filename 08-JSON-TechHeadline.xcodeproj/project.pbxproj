@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADEA98B31D156555003A2B08 /* 08-JSON-科技头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-JSON-科技头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEA98B31D156555003A2B08 /* 08-JSON-TechHeadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "08-JSON-TechHeadline.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEA98B71D156555003A2B08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADEA98B91D156555003A2B08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADEA98BA1D156555003A2B08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		ADEA98AA1D156555003A2B08 = {
 			isa = PBXGroup;
 			children = (
-				ADEA98B51D156555003A2B08 /* 08-JSON-科技头条 */,
+				ADEA98B51D156555003A2B08 /* 08-JSON-TechHeadline */,
 				ADEA98B41D156555003A2B08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		ADEA98B41D156555003A2B08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADEA98B31D156555003A2B08 /* 08-JSON-科技头条.app */,
+				ADEA98B31D156555003A2B08 /* 08-JSON-TechHeadline.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADEA98B51D156555003A2B08 /* 08-JSON-科技头条 */ = {
+		ADEA98B51D156555003A2B08 /* 08-JSON-TechHeadline */ = {
 			isa = PBXGroup;
 			children = (
 				ADEA98D01D1565F9003A2B08 /* Models */,
@@ -70,7 +70,7 @@
 				ADEA98CD1D1565DE003A2B08 /* Others */,
 				ADEA98B61D156555003A2B08 /* Supporting Files */,
 			);
-			path = "08-JSON-科技头条";
+			path = "08-JSON-TechHeadline";
 			sourceTree = "<group>";
 		};
 		ADEA98B61D156555003A2B08 /* Supporting Files */ = {
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADEA98B21D156555003A2B08 /* 08-JSON-科技头条 */ = {
+		ADEA98B21D156555003A2B08 /* 08-JSON-TechHeadline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADEA98CA1D156556003A2B08 /* Build configuration list for PBXNativeTarget "08-JSON-科技头条" */;
+			buildConfigurationList = ADEA98CA1D156556003A2B08 /* Build configuration list for PBXNativeTarget "08-JSON-TechHeadline" */;
 			buildPhases = (
 				ADEA98AF1D156555003A2B08 /* Sources */,
 				ADEA98B01D156555003A2B08 /* Frameworks */,
@@ -136,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = "08-JSON-科技头条";
-			productName = "08-JSON-科技头条";
-			productReference = ADEA98B31D156555003A2B08 /* 08-JSON-科技头条.app */;
+			name = "08-JSON-TechHeadline";
+			productName = "08-JSON-TechHeadline";
+			productReference = ADEA98B31D156555003A2B08 /* 08-JSON-TechHeadline.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADEA98AE1D156555003A2B08 /* Build configuration list for PBXProject "08-JSON-科技头条" */;
+			buildConfigurationList = ADEA98AE1D156555003A2B08 /* Build configuration list for PBXProject "08-JSON-TechHeadline" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADEA98B21D156555003A2B08 /* 08-JSON-科技头条 */,
+				ADEA98B21D156555003A2B08 /* 08-JSON-TechHeadline */,
 			);
 		};
 /* End PBXProject section */
@@ -306,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "08-JSON-科技头条/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/08-JSON-TechHeadline/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "good.-8-JSON-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "08-JSON-科技头条/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/08-JSON-TechHeadline/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "good.-8-JSON-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADEA98AE1D156555003A2B08 /* Build configuration list for PBXProject "08-JSON-科技头条" */ = {
+		ADEA98AE1D156555003A2B08 /* Build configuration list for PBXProject "08-JSON-TechHeadline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADEA98C81D156556003A2B08 /* Debug */,
@@ -336,13 +336,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADEA98CA1D156556003A2B08 /* Build configuration list for PBXNativeTarget "08-JSON-科技头条" */ = {
+		ADEA98CA1D156556003A2B08 /* Build configuration list for PBXNativeTarget "08-JSON-TechHeadline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADEA98CB1D156556003A2B08 /* Debug */,
 				ADEA98CC1D156556003A2B08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

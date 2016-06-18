@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>08-JSON-TechHeadline.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 		<key>08-JSON-科技头条.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
