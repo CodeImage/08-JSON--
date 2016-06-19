@@ -11,4 +11,5 @@
 
 @interface LJNewsCell : UITableViewCell
 @property (nonatomic,strong) LJNewsModel *newsModel;
++ (NSString *)reuseIdentifierWithNewsModel:(LJNewsModel *)newsModel;
 @end

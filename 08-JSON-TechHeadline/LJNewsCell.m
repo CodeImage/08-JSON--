@@ -19,10 +19,13 @@
 @end
 @implementation LJNewsCell
 
-- (void)awakeFromNib {
-    // Initialization code
++ (NSString *)reuseIdentifierWithNewsModel:(LJNewsModel *)newsModel{
+    if ([newsModel.img isEqualToString:@""]) {
+        return @"newsCell2";
+    }else{
+        return @"newsCell";
+    }
 }
-
 - (void)layoutSubviews{
     [super layoutSubviews];
     
