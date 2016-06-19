@@ -70,7 +70,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LJNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];
+    // 用这个，在第一次加载界面的时候，自定义cell的layoutSubviews里面计算的textWidth错误(用下面的就没问题)
+//    LJNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];
+    
+    LJNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell" forIndexPath:indexPath];
     
     cell.newsModel = self.newsList[indexPath.row];
     

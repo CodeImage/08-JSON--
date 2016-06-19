@@ -17,6 +17,9 @@
 
 + (void)getNewsListFromURLWithSuccessBlock:(void (^)(NSArray *))successBlock andErrorBlock:(void (^)())errorBlock{
     NSURL *url = [NSURL URLWithString:@"http://news.coolban.com/Api/Index/news_list/app/2/cat/0/limit/20/time/1466246716/type/0?channel=appstore&uuid=F4B71DC2-FF65-4333-B6F9-68C3F1328DB7&net=5&model=iPhone&ver=1.0.5"];
+    
+    NSURL *url2 = [NSURL URLWithString:@"http://news.coolban.com/Api/Index/news_list/app/2/cat/0/limit/20/time/1466255730/type/1?channel=appstore&uuid=F4B71DC2-FF65-4333-B6F9-68C3F1328DB7&net=5&model=iPhone&ver=1.0.5"];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
