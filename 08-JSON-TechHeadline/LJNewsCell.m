@@ -34,7 +34,7 @@
         
     }];
     
-    self.addTimeLabel.text = [NSString stringWithFormat:@"%d",newsModel.addtime.intValue];
+    self.addTimeLabel.text = newsModel.timeInteval;
 }
 
 @end

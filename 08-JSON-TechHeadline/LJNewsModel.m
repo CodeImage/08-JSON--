@@ -55,4 +55,26 @@
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
 
 }
+
+- (NSString *)timeInteval{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *newsDate = [NSDate dateWithTimeIntervalSince1970:self.addtime.doubleValue];
+    
+    NSDateComponents *deltaDate = [calendar components:NSCalendarUnitMinute fromDate:newsDate toDate:[NSDate date] options:0];
+    if (deltaDate.minute < 60) {
+        return [NSString stringWithFormat:@"%ld分钟前",deltaDate.minute];
+    }
+    
+    deltaDate = [calendar components:NSCalendarUnitHour fromDate:newsDate toDate:[NSDate date] options:0];
+    if (deltaDate.hour < 24) {
+        return [NSString stringWithFormat:@"%ld小时前",deltaDate.hour];
+    }
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//    formatter.dateFormat = @"MM:dd HH:mm";
+    formatter.dateFormat = @"MM月dd日";
+    
+    return [formatter stringFromDate:newsDate];
+}
+
 @end
